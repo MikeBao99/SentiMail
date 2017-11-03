@@ -1,6 +1,6 @@
 
 ## The ML Email Sentiment Analyzer
-Visit our website at [mikebao99.github.io/sentimail]
+Visit our website at [mikebao99.github.io/sentimail](mikebao99.github.io/sentimail)
 
 We support emails from various sources including:
 
