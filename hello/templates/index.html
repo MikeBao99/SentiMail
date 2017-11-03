@@ -15,11 +15,18 @@
     <a type="button" class="btn btn-lg btn-primary" href="https://github.com/MikeBao99/SentiMail"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
   </div>
 </div>
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">Example file input</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-  </div>
-</form>
+<div class="file-loading">
+    <input id="input-20" type="file">
+</div>
+<script>
+$(document).on('ready', function() {
+    $("#input-20").fileinput({
+        browseClass: "btn btn-primary btn-block",
+        showCaption: false,
+        showRemove: false,
+        showUpload: false
+    });
+});
+</script>
 
 {% endblock %}
