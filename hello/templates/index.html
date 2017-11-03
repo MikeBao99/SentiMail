@@ -15,9 +15,22 @@
     <a type="button" class="btn btn-lg btn-primary" href="https://github.com/MikeBao99/SentiMail"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
   </div>
 </div>
-<label class="custom-file">
-  <input type="file" id="file" class="custom-file-input">
-  <span class="custom-file-control"></span>
-</label>
+<div class="container">
+  <h2>Vertical (basic) Form</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 
 {% endblock %}
