@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from flask import Flask, flash, redirect, render_template, request, session
+from flask_session import Session
 
 from .models import Greeting
 
-views = Blueprint('views', __name__)
+app = Flask(__name__)
 
 # Create your views here.
 def index(request):
