@@ -8,7 +8,7 @@ def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, 'index.html')
 
-@hello.route("/")
+@app.route("/")
 def index():
     if request.method == "POST":
     	render_template("index.html", result = "This FUCKING WORKED!!")
