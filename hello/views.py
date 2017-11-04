@@ -3,6 +3,8 @@ from django.http import HttpResponse
 
 from .models import Greeting
 
+views = Blueprint('views', __name__)
+
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
