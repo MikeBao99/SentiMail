@@ -12,7 +12,7 @@ app = Flask(__name__)
 #     return render(request, 'index.html')
 
 @app.route("/")
-def index():
+def index(request):
     if request.method == "POST":
     	render_template("index.html", result = "This FUCKING WORKED!!")
     else:
