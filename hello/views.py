@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from flask import Flask, flash, redirect, render_template, request, session
-from flask_session import Session
 
 from .models import Greeting
 
