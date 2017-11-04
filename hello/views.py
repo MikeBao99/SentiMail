@@ -8,6 +8,12 @@ def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, 'index.html')
 
+@views.route("/")
+def index():
+    if request.method == "POST":
+    	render_template("index.html", result = "This FUCKING WORKED!!")
+    else:
+    	render_template("index.html", result = "we fucked up!!!")
 
 def db(request):
 
